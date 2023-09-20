@@ -1,0 +1,733 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+  margin: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+:root{
+  --main-bg-color:#111216;
+  --basic-font-size:18.72px;
+  --middle-font-size:26px;
+  --headline-font-size:36px;
+}
+/******************/
+/* Érkező felület */
+/******************/
+#logo-title {
+  background-color: #1C1B20;
+  display: flex;
+  position: relative;
+  height: 130vh;
+  width:100%;
+  overflow: hidden;
+}
+.headerOutlook{
+  width: calc(100% - 400px);
+  padding: 50px;
+}
+.menuLang{
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items:center;
+  height: 10px;
+  z-index: 2;
+}
+.menu {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items:center;
+  height: 10px;
+  left:400px;
+  z-index: 2;
+  font-size:var(--middle-font-size);
+}
+.menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  opacity: 60%;
+}
+
+.menu a:hover {
+  opacity:100%;
+  text-decoration: underline;
+}
+
+.dropdown .dropbtn {
+  font-size: var(--middle-font-size);  
+  display:flex;
+  justify-content:center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+  color:transparent;
+}
+
+.dropdown-content a {
+  color: #1C1B20;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+img[alt~="firstSnow"] {
+  position: absolute;
+  left:0;
+  bottom: 0;
+  height: 90%;
+  width: auto;
+  align-self: center;
+  object-fit: cover;
+}
+img[alt~="artist"] {
+  position: absolute;
+  right:0;
+  bottom:0;
+  height: 100%;
+  width: auto;
+  align-self: center;
+  object-fit: cover;
+}
+
+.ownerMain{
+  display: flex;
+  position:absolute;
+  height: auto;
+  width:400px;
+  z-index: 1;
+  top:200px;
+  left: 650px;
+  justify-content: center;
+  flex-direction: column;
+}
+.ownerMain h1{
+  font-size: 124px;
+}
+.ownerMain p{
+  display: flex;
+  position: relative;
+  align-self: center;
+  font-size: var(--headline-font-size);
+}
+.ownerSocial{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 80px;
+  margin-left: -90px;
+  margin-top: 30px;
+}
+
+
+li {
+  display: inline;
+  margin: 30px;
+  font-style: bold;
+}
+
+img {
+  height: 30px;
+  display: block;
+  margin: 0;
+}
+/*****************/
+/* Eszköz kártya */
+/*****************/
+
+#content1 {
+  display: flex;
+  background-color: var(--main-bg-color);
+  height: 65vh;
+  align-items: center;
+  justify-content: center;
+}
+.stuffs{
+  width: calc(100% - 200px);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 500px;
+}
+.cam{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 400px;
+}
+.cam .card_top{
+  opacity: 80%;
+}
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 500px;
+  width: 350px;
+  text-align: center;
+}
+.card_top {
+  font-size: var(--headline-font-size);
+  align-self: center;
+  line-height: 60px;
+}
+span{
+  color:#bcbcbc;
+}
+.card p {
+  font-size:var(--basic-font-size);
+  color:grey;
+  line-height:25px;
+}
+
+img[alt~="lens"] {
+  height: 80px;
+  width: auto;
+  align-self: center;
+}
+img[alt~="photoshop"] {
+  height: 80px;
+  width: auto;
+  align-self: center;
+}
+/*************/
+/*  Galéria  */
+/*************/
+#card-pictures {
+  display: flex;
+  background-color:var(--main-bg-color);
+  height: 100vh;
+  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.galerie{
+  display: flex;
+  position: absolute;
+  align-self:flex-start;
+  height: auto;
+  font-size:var(--headline-font-size);
+  z-index: 2;
+  left:100px;
+  opacity: 70%;
+}
+.blur_cards {
+  display: flex;
+}
+.blur_card1,.blur_card2, .blur_card3 {
+  display: flex;
+  position: relative;
+  width: 1200px;
+  height: 800px;
+  margin: 30px;
+}
+
+.blur_card1::before {    
+  content: "";
+  background-image: url(./IMG_Photos/st7.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 70%;
+}
+.blur_card2::before {    
+  content: "";
+  background-image: url(./IMG_Photos/p2.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 70%;
+}
+.blur_card3::before {    
+  content: "";
+  background-image: url(./IMG_Photos/sp1.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 70%;
+}
+.blur_card2 button , .blur_card1 button, .blur_card3 button{
+  display: flex;
+  position: absolute;
+  justify-content:center;
+  align-items: center;
+  font-size:var(--basic-font-size);
+  z-index: 2;
+  cursor: pointer;
+  border:2px solid #fff;
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  opacity: 70%;
+  bottom: 50px;
+  right: 50px;
+}
+button:hover{
+  opacity: 100%;
+}
+.pic_title {
+  display: flex;
+  position: relative;
+  height: 100px;
+  font-size: 54px;
+  transform: rotate(-90deg);
+  top:60px;
+  left:0;
+}
+.prev-btn,
+.next-btn {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 300px;
+}
+.next-btn {
+  right: 0px;
+}
+.prev-btn {
+  left: 0px;
+}
+/******************/
+/* Ajánlat kártya */
+/******************/
+
+#offerCards{
+  display: flex;
+  background-color: var(--main-bg-color);
+  height: 65vh;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.offer{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #1D2027;
+  height: 450px;
+  width: 400px;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.offerHead{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.offerHead p {
+  font-size: var(--middle-font-size);
+}
+
+.offer img{
+  height: 50px;
+  width: 60px;
+  float: left;
+  margin-right: 20px;
+}
+
+.offer ul{
+  font-size: var(--basic-font-size);
+  width: 200px;
+  line-height: 40px;
+}
+.offer ul li::before {
+  content: "\2022";
+  color: #ffffff;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.offer button{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--basic-font-size);
+  background-color: #301D9D;
+  margin-top: 20px;
+  height:50px;
+  width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/*********/
+/* Rólam */
+/*********/
+
+#aboutme {
+  display: flex;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  align-items: center;
+  justify-content: center;
+}
+.blureffect {
+  display: flex;
+  max-height: 700px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction:column;
+  align-self: flex-end;
+  justify-self: flex-end;
+  width: 600px;
+  font-size: var(--basic-font-size);
+  line-height: 26px;
+  text-align: left;
+}
+.me{
+  font-size: var(--headline-font-size);
+  margin-bottom: 50px;
+}
+
+.abstractPic{
+  display: flex;
+  position: relative;
+  justify-self: flex-end;
+  align-self: flex-end;
+  height: 300px;
+  float:right;
+}
+
+img[alt~="blueEye"] {
+  position: relative;
+  height: 700px;
+  width: auto;
+}
+/*****************/
+/* Ajánlatkérés */
+/*****************/
+#offer{
+  display: flex;
+  height: 50vh;
+  background-color: var(--main-bg-color);
+  justify-content: center;
+}
+.basicOffer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 30px;
+  line-height: 25px;
+  font-size: var(--middle-font-size);
+}
+.basicOffer h1{
+  margin-bottom: 20px;
+}
+.basicOffer p{
+  opacity: 70%
+}
+
+.basicOffer button{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--basic-font-size);
+  background-color: #301D9D;
+  margin-top: 20px;
+  height:50px;
+  width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/************/
+/* Contacts */
+/************/
+
+#Contacts {
+  background-color: #0B0A0F;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.conactsBlock {
+  width: calc(100% - 400px);
+  height: 100%;
+}
+.Patric_part {
+  padding-top: 40px;
+  display: flex;
+  height: calc(100% - 30px);
+  justify-content: space-between;
+}
+.mail {
+  display: flex;
+  flex-direction: column;
+}
+.owner{
+  font-size: var(--headline-font-size);
+}
+.ownerContact{
+  margin-top: 30px;
+}
+.ownerContact p{
+  opacity: 60%;
+  font-size: var(--basic-font-size);
+}
+.ownerContact a{
+  text-decoration: none;
+  opacity: 60%;
+}
+.ownerContact a:hover{
+  cursor: pointer;
+  text-decoration:underline;
+  opacity: 100%;
+}
+.ownerNavbar{
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+}
+.bottomNavbar{
+  font-size:var(--basic-font-size);
+  float: right;
+  margin-right: -25px;
+}
+.bottomNavbar a{
+  text-decoration: none;
+  opacity: 70%;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-out;
+}
+.bottomNavbar a:hover{
+  text-decoration: underline;
+  opacity: 100%;
+  transform: scaleX(1);
+}
+
+.Social_media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 90px;
+}
+.cont_icon {
+  display: inline;
+  background-color: transparent;
+  border: none;
+  padding: 6px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h3 {
+  justify-content: start;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin: 0px;
+  width: 40px;
+}
+.crSection {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-top: 1px solid white;
+  padding-top: 5px;
+}
+.cr_pic {
+  display: flex;
+  height: 14px;
+  padding-right: 5px;
+}
+p {
+  font-size: var(--basic-font-size);
+  font-weight: bold;
+}
+h6 {
+  display: flex;
+  font-size: var(--basic-font-size);
+  line-height: normal;
+  margin-top: 30px;
+}
+
+
+/********************/
+/* Képernyő méretek */
+/********************/
+
+@media screen and (max-width: 1650px) {
+  #aboutme {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    z-index: -1;
+  }
+  .aboutme {
+    left: 0;
+  }
+
+  .buble1 {
+    display: none;
+  }
+  .buble2 {
+    bottom: 0;
+    left: 0;
+  }
+  .buble3 {
+    bottom: 0;
+    left: 0;
+  }
+  .buble4 {
+    display: none;
+  }
+  #content1 {
+    position: relative;
+    height: auto;
+    flex-direction: column;
+  }
+  .card {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 40px;
+  }
+  
+}
+/*
+@media screen and (max-width: 1450px) {
+  #logo-title {
+    display: flex;
+    justify-content: center;
+  }
+  .card p {
+    margin: 10px;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+  }
+  #aboutme {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .aboutme {
+    position: relative;
+    height: auto;
+    flex-direction: column;
+  }
+  .buble2 {
+    display: none;
+  }
+  .buble3 {
+    display: none;
+  }
+  .pic_me {
+    display: none;
+  }
+  #card-pictures {
+    position: relative;
+    height: auto;
+    flex-direction: column;
+  }
+  .blur_cards {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+  .blur_card {
+    display: flex;
+    position: relative;
+    width: 500px;
+    background: radial-gradient(
+      circle,
+      rgba(0, 98, 159, 1) 0%,
+      rgba(0, 41, 74, 1) 100%
+    );
+    box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2),
+      0px 10px 14px 1px rgba(0, 0, 0, 0.14),
+      0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+    font-size: 24px;
+  }
+  .prev-btn,
+  .next-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #logo-title {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .mobileAnimation {
+    display: flex;
+  }
+  .sideOpen {
+    background-color: #ffc200;
+  }
+  .picanimation {
+    display: none;
+  } 
+  .picanimation2 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutme {
+    display: flex;
+    position: relative;
+  }
+  .Patric_part {
+    flex-direction: column;
+  }
+  
+  .blur_cards {
+    align-items: center;
+    width: 320px;
+  }
+  .blur_card {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 500px;
+  }
+}
+*/
