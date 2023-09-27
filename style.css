@@ -113,8 +113,8 @@ img[alt~="artist"] {
 
 .ownerMain {
   display: flex;
-  position: absolute;
   height: auto;
+  position: sticky;
   width: 400px;
   z-index: 1;
   top: 200px;
@@ -601,21 +601,131 @@ h6 {
 /********************/
 /* Képernyő méretek */
 /********************/
-
-/** Small screens, laptops **/
-@media screen and (max-width: 1024px) {
-}
-
-/** iPads, Tablets **/
-@media screen and (max-width: 768px) {
-}
-/** Mobile devices **/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1500px) {
   #logo-title {
-    height: 60vh;
+    height: 100vh;
   }
-  .menuLang {
-    display: none;
+  .ownerMain {
+    width: 250px;
+    top: 200px;
+    left: 520px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+  }
+  .ownerMain h1 {
+    font-size: 96px;
+  }
+
+  #aboutme {
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    padding-top: 30px;
+  }
+  .blureffect {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 60%;
+    padding: 30px;
+  }
+  .blureffect img {
+    opacity: 60%;
+  }
+
+  .aboutme {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    z-index: 1;
+  }
+  .abstractPic {
+    display: flex;
+    position: absolute;
+    height: 300px;
+    left: 50px;
+    bottom: -100px;
+  }
+
+  .pic_me {
+    display: flex;
+    position: absolute;
+    right: -400px;
+    filter: blur(10px);
+  }
+  #offerCards {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .stuffs1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .offer {
+    height: auto;
+    width: auto;
+    margin: 0px 10px;
+  }
+  .offerHead p {
+    font-size: var(--basic-font-size);
+  }
+
+  .blur_card1,
+  .blur_card2,
+  .blur_card3 {
+    display: flex;
+    position: relative;
+    width: 900px;
+    height: 500px;
+    margin: 30px;
+  }
+  .prev-btn,
+  .next-btn {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .ownerMain h1 {
+    font-size: 86px;
+  }
+  .ownerMain {
+    width: 250px;
+    top: 200px;
+    left: 500px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -60px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -40px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .ownerMain h1 {
+    font-size: 78px;
+  }
+  .ownerMain {
+    left: 480px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #logo-title {
+    height: 90vh;
   }
   .menu {
     flex-wrap: wrap;
@@ -625,28 +735,29 @@ h6 {
     margin: 20px 0px;
     width: 100%;
     padding: 0px 10px;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .menu a {
     padding: 8px;
   }
 
+  .menuLang {
+    font-size: 12px;
+    margin: 30px;
+  }
   .firstPic {
     display: flex;
     position: absolute;
-    right: -250px;
   }
   .secondPic {
     display: flex;
     position: absolute;
-    left: -100px;
   }
 
   .ownerMain {
-    position: sticky;
     width: 250px;
-    top: 140px;
-    left: 150px;
+    top: 180px;
+    left: 430px;
   }
   .ownerMain h1 {
     font-size: 58px;
@@ -750,7 +861,6 @@ h6 {
     display: flex;
     position: relative;
     width: 100%;
-    height: 300px;
     margin: 0px;
   }
 
@@ -796,7 +906,7 @@ h6 {
     position: relative;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 60%;
     padding-top: 0px;
   }
   .offer {
@@ -804,9 +914,8 @@ h6 {
     margin: 20px 0px;
     height: auto;
   }
-
-  .offerHead p {
-    font-size: var(--basic-font-size);
+  .offerHead {
+    align-self: center;
   }
 
   .offer img {
@@ -825,49 +934,6 @@ h6 {
     font-size: var(--headline-font-size);
   }
 
-  /*********/
-  /* Rólam */
-  /*********/
-
-  #aboutme {
-    overflow: hidden;
-    position: relative;
-    height: auto;
-    padding-top: 30px;
-  }
-  .blureffect {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    padding: 30px;
-  }
-  .blureffect img {
-    opacity: 60%;
-  }
-
-  .aboutme {
-    display: flex;
-    width: 100%;
-    height: auto;
-    font-size: 14px;
-    z-index: 1;
-  }
-  .abstractPic {
-    display: flex;
-    position: absolute;
-    height: 210px;
-    left: -10px;
-  }
-
-  .pic_me {
-    display: flex;
-    position: absolute;
-    right: -650px;
-    filter: blur(10px);
-  }
-  .me {
-    margin-bottom: 10px;
-  }
   /*****************/
   /* Ajánlatkérés */
   /*****************/
@@ -937,7 +1003,7 @@ h6 {
   .bottomNavbar {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0px;
     padding-top: 20px;
     font-size: var(--middle-font-size);
@@ -948,5 +1014,226 @@ h6 {
   .Social_media {
     justify-content: center;
     display: table-header-group;
+  }
+}
+/** Small screens, laptops **/
+@media screen and (max-width: 1024px) {
+  #logo-title {
+    height: 80vh;
+  }
+  .menuLang {
+    display: none;
+  }
+  .dropdown {
+    display: none;
+  }
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 350px;
+  }
+  .stuffs1 {
+    width: 90%;
+  }
+  .abstractPic {
+    display: flex;
+    position: absolute;
+    height: 300px;
+    left: 50px;
+  }
+
+  .pic_me {
+    display: flex;
+    position: absolute;
+    right: -400px;
+    filter: blur(10px);
+  }
+}
+@media screen and (max-width: 900px) {
+  #logo-title {
+    height: 70vh;
+  }
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 300px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -30px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -20px;
+  }
+  .blur_card1,
+  .blur_card2,
+  .blur_card3 {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #logo-title {
+    height: 60vh;
+  }
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 230px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -60px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -40px;
+  }
+  .blureffect {
+    width: 80%;
+  }
+  .abstractPic {
+    height: 210px;
+    left: -10px;
+  }
+
+  .pic_me {
+    right: -650px;
+  }
+}
+
+/** iPads, Tablets **/
+@media screen and (max-width: 768px) {
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 230px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -60px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 200px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -80px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -60px;
+  }
+}
+/** átmeneti **/
+@media screen and (max-width: 600px) {
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 200px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -100px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -80px;
+  }
+  .blur_card1,
+  .blur_card2,
+  .blur_card3 {
+    height: 300px;
+  }
+  .bottomNavbar {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 530px) {
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 180px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -150px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -90px;
+  }
+}
+/** Mobile devices **/
+@media screen and (max-width: 480px) {
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 150px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -200px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -100px;
+  }
+}
+/** small phone **/
+@media screen and (max-width: 400px) {
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 150px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -250px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -150px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .ownerMain {
+    width: 250px;
+    top: 140px;
+    left: 150px;
+  }
+  .firstPic {
+    display: flex;
+    position: absolute;
+    right: -280px;
+  }
+  .secondPic {
+    display: flex;
+    position: absolute;
+    left: -180px;
   }
 }
