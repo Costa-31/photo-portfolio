@@ -8,12 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  min-height: 100vh;
   background-color: var(--main-bg-color);
 }
 :root {
@@ -43,7 +38,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.menu {
+.menu,
+.menu2 {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -53,14 +49,16 @@ body {
   font-size: var(--middle-font-size);
 }
 
-.menu a {
+.menu a,
+.menu2 a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   display: flex;
   opacity: 60%;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu2 a:hover {
   opacity: 100%;
   text-decoration: underline;
 }
@@ -72,6 +70,19 @@ body {
 /***********/
 /* Galéria */
 /***********/
+.title {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  font-size: var(--headline-font-size);
+  opacity: 70%;
+  margin: 20px;
+}
+img[alt~="lens"] {
+  height: 30px;
+  width: auto;
+  align-self: center;
+}
 
 .images {
   display: flex;
@@ -86,6 +97,7 @@ body {
   width: 450px; /* Set the width and height of your image container */
   height: 450px;
   overflow: hidden;
+  border: 5px solid var(--main-bg-color);
 }
 
 .image-placeholder1,
@@ -121,7 +133,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat; /* Háttérkép ismétlődésének letiltása */
   background-position: cover; /* Háttérkép pozíciójának középre igazítása */
-  border: 10px solid var(--main-bg-color);
 }
 .image-placeholder1 {
   background-image: url("https://drive.google.com/uc?export=view&id=1yB-l1N4FScxnfD0I3wnpZcFnw6QpwfaA");
@@ -232,6 +243,8 @@ body {
 }
 .owner {
   font-size: var(--headline-font-size);
+  border-left: 3px solid #fff;
+  padding-left: 10px;
 }
 .ownerContact {
   margin-top: 30px;
@@ -325,4 +338,104 @@ h6 {
   font-size: var(--basic-font-size);
   line-height: normal;
   margin-top: 30px;
+}
+/** Small screens, laptops **/
+
+@media screen and (max-width: 1024px) {
+  #header {
+    height: auto;
+    width: calc(100%-60px);
+  }
+  .title {
+    font-size: var(--middle-font-size);
+  }
+  #Contacts {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    height: auto;
+  }
+  .conactsBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Patric_part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
+  .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .crSection {
+    width: 80%;
+  }
+  .menu2 {
+    align-items: center;
+    justify-content: center;
+  }
+  .ownerNavbar {
+    display: table;
+    align-items: center;
+  }
+  .Social_media {
+    justify-content: center;
+    display: table-header-group;
+  }
+}
+
+/** iPads, Tablets **/
+@media screen and (max-width: 768px) {
+  #header {
+    height: auto;
+  }
+  .menu {
+    z-index: 2;
+    font-size: var(--middle-font-size);
+  }
+
+  .menu a {
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    opacity: 60%;
+  }
+  .menuLang {
+    display: none;
+  }
+
+  .menu2 {
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .menu2 a {
+    padding: 10px 0px;
+    justify-content: space-around;
+  }
+}
+/** Mobile devices **/
+@media screen and (max-width: 480px) {
+  #header {
+    height: auto;
+    width: calc(100%-60px);
+  }
+  .menu {
+    font-size: var(--basic-font-size);
+  }
+  .title {
+    font-size: var(--middle-font-size);
+  }
+
+  .crSection {
+    width: auto;
+  }
 }
