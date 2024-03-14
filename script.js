@@ -1,3 +1,11 @@
+let mybutton = document.getElementById("myBtn");
+
+document
+  .getElementById("checkbox4")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+  });
+
 // When the user scrolls down 20px from the top of the document, show the button
 /*window.onscroll = function () {
   scrollFunction();
@@ -10,19 +18,19 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
+*/
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+/*function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-*/
-//for scroll back after refresh
+}*/
 
+//for scroll back after refresh
+/*
 function saveScrollPosition() {
   const scrollY = window.scrollY;
   sessionStorage.setItem("scrollPosition", scrollY);
-}
+}*/
 
 //link handle for new window
 
