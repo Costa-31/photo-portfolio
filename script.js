@@ -26,10 +26,11 @@ function scrollFunction() {
 }*/
 
 //for scroll back after refresh
+/*
 function saveScrollPosition() {
   const scrollY = window.scrollY;
   sessionStorage.setItem("scrollPosition", scrollY);
-}
+}*/
 
 //link handle for new window
 
@@ -98,16 +99,7 @@ function updateSliderPosition() {
   cardsContainer.style.transform = `translateX(${translateXValue}px)`;
 }
 
-/* side navigationbar
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}*/
-
-/* Hamburger menu */
+/* Hamburger menu for navbar*/
 
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.querySelector(".hamburger4");
