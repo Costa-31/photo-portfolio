@@ -1,11 +1,5 @@
 let mybutton = document.getElementById("myBtn");
 
-document
-  .getElementById("checkbox4")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-  });
-
 // When the user scrolls down 20px from the top of the document, show the button
 /*window.onscroll = function () {
   scrollFunction();
@@ -26,11 +20,11 @@ function scrollFunction() {
 }*/
 
 //for scroll back after refresh
-/*
+
 function saveScrollPosition() {
   const scrollY = window.scrollY;
   sessionStorage.setItem("scrollPosition", scrollY);
-}*/
+}
 
 //link handle for new window
 
