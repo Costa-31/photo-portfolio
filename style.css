@@ -110,9 +110,10 @@ ul {
 
 .frstSnw {
   display: flex;
+  position: absolute;
   height: 90vh;
   width: 35%;
-  align-self: flex-end;
+  bottom: 0px;
   background-position: center; /* A háttérkép középre igazítása */
   background-image: url("https://drive.google.com/thumbnail?id=1WiygpUlZew_hmvny79Glj4hABP8xOCLr&sz=w1000");
   background-size: cover;
