@@ -1,0 +1,400 @@
+* {
+  scroll-behavior: smooth;
+  /*border: 1px solid red;*/
+  margin: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+}
+:root {
+  --main-bg-color: #111216;
+  --basic-font-size: 18.72px;
+  --middle-font-size: 26px;
+  --headline-font-size: 36px;
+}
+
+/******************/
+/* Érkező felület */
+/******************/
+#header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+  justify-items: center;
+  background-color: #0b0a0f;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#logo-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.menu,
+.menu2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  font-size: var(--middle-font-size);
+}
+
+.menu a,
+.menu2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: flex;
+  opacity: 60%;
+}
+
+.menu a:hover,
+.menu2 a:hover {
+  opacity: 100%;
+  text-decoration: underline;
+}
+.menuLang {
+  display: flex;
+  position: absolute;
+  left: 50px;
+}
+/***********/
+/* Galéria */
+/***********/
+.title {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  font-size: var(--headline-font-size);
+  opacity: 70%;
+  margin: 20px;
+}
+img[alt~="lens"] {
+  height: 30px;
+  width: auto;
+  align-self: center;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-skeleton {
+  display: inline-block;
+  position: relative;
+  width: 400px; /* Set the width and height of your image container */
+  border: 5px solid var(--main-bg-color);
+}
+
+.image-placeholder1,
+.image-placeholder2,
+.image-placeholder3,
+.image-placeholder4,
+.image-placeholder5,
+.image-placeholder6,
+.image-placeholder7,
+.image-placeholder8,
+.image-placeholder9,
+.image-placeholder10,
+.image-placeholder11,
+.image-placeholder12,
+.image-placeholder13,
+.image-placeholder14,
+.image-placeholder15,
+.image-placeholder16,
+.image-placeholder17,
+.image-placeholder18,
+.image-placeholder19,
+.image-placeholder20,
+.image-placeholder21,
+.image-placeholder22,
+.image-placeholder23,
+.image-placeholder24,
+.image-placeholder25,
+.image-placeholder26,
+.image-placeholder27 {
+  padding-top: 100%;
+  background-color: #a09f9f; /* Háttérszín a skeleton képnek */
+  background-position: center; /* A háttérkép középre igazítása */
+  background-repeat: no-repeat; /* Megakadályozza a háttérkép ismétlődését */
+  background-size: cover;
+}
+
+/************/
+/* Contacts */
+/************/
+
+#Contacts {
+  background-color: #0b0a0f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.conactsBlock {
+  width: calc(100% - 400px);
+  height: 100%;
+}
+.Patric_part {
+  padding-top: 40px;
+  display: flex;
+  height: calc(100% - 30px);
+  justify-content: space-between;
+}
+.mail {
+  display: flex;
+  flex-direction: column;
+}
+.owner {
+  font-size: var(--headline-font-size);
+  border-left: 3px solid #fff;
+  padding-left: 10px;
+}
+.ownerContact {
+  margin-top: 30px;
+}
+.ownerContact p {
+  opacity: 60%;
+  font-size: var(--basic-font-size);
+}
+.ownerContact a {
+  text-decoration: none;
+  opacity: 60%;
+}
+.ownerContact a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 100%;
+}
+.ownerNavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.bottomNavbar {
+  font-size: var(--basic-font-size);
+  float: right;
+  margin-right: -25px;
+}
+.bottomNavbar a {
+  text-decoration: none;
+  opacity: 70%;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-out;
+}
+.bottomNavbar a:hover {
+  text-decoration: underline;
+  opacity: 100%;
+  transform: scaleX(1);
+}
+
+.Social_media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 90px;
+}
+.scIcon {
+  height: 30px;
+}
+.cont_icon {
+  display: inline;
+  background-color: transparent;
+  border: none;
+  padding: 6px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h3 {
+  justify-content: start;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin: 0px;
+  width: 40px;
+}
+.crSection {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-top: 1px solid white;
+  padding-top: 5px;
+  margin-top: 10px;
+}
+.cr_pic {
+  display: flex;
+  height: 14px;
+  padding-right: 5px;
+}
+p {
+  font-size: var(--basic-font-size);
+  font-weight: bold;
+}
+h6 {
+  display: flex;
+  font-size: var(--basic-font-size);
+  line-height: normal;
+  margin-top: 30px;
+}
+
+/****************************/
+/** Kép megnyitása nagyban **/
+/****************************/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/** Small screens, laptops **/
+
+@media screen and (max-width: 1024px) {
+  #header {
+    height: auto;
+    width: calc(100%-60px);
+  }
+  .title {
+    font-size: var(--middle-font-size);
+  }
+  #Contacts {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    height: auto;
+  }
+  .conactsBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Patric_part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
+  .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .crSection {
+    width: 80%;
+  }
+  .menu2 {
+    align-items: center;
+    justify-content: center;
+  }
+  .ownerNavbar {
+    display: table;
+    align-items: center;
+  }
+  .Social_media {
+    justify-content: center;
+    display: table-header-group;
+  }
+}
+
+/** iPads, Tablets **/
+@media screen and (max-width: 768px) {
+  #header {
+    height: auto;
+  }
+  .menu {
+    z-index: 2;
+    font-size: var(--middle-font-size);
+  }
+
+  .menu a {
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    opacity: 60%;
+  }
+  .menuLang {
+    display: none;
+  }
+
+  .menu2 {
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .menu2 a {
+    padding: 10px 0px;
+    justify-content: space-around;
+  }
+}
+/** Mobile devices **/
+@media screen and (max-width: 480px) {
+  #header {
+    height: auto;
+    width: calc(100%-60px);
+  }
+  .menu {
+    font-size: var(--basic-font-size);
+  }
+  .title {
+    font-size: var(--middle-font-size);
+  }
+
+  .crSection {
+    width: auto;
+  }
+}

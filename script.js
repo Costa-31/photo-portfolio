@@ -1,10 +1,16 @@
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
+document
+  .getElementById("checkbox4")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+  });
 
+// When the user scrolls down 20px from the top of the document, show the button
+/*window.onscroll = function () {
+  scrollFunction();
+};*/
+/*
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -12,9 +18,9 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
-/* When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+*/
+// When the user clicks on the button, scroll to the top of the document
+/*function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }*/
@@ -59,16 +65,13 @@ function openNewWindow6() {
   );
 }
 function openNewWindow7() {
-  window.open("./Photosite/portrait.html", "_self");
+  window.open("./Photosite/street.html", "_self");
 }
 function openNewWindow8() {
   window.open("./Photosite/portrait.html", "_self");
 }
 function openNewWindow9() {
-  window.open(
-    "https://drive.google.com/drive/folders/1ezfzaNshKMBoaUq9cn2InDYeGN4sSwCC?fbclid=IwAR1Cr1UNNpdJ0u_bOVAB7sKoSTtwNE1WWYkEzHNNvkzy5AckxDz8cRSw9X8",
-    "_blank"
-  );
+  window.open("./Photosite/sport.html", "_self");
 }
 
 // card pic sliders
@@ -103,3 +106,14 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }*/
+
+/* Hamburger menu */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerMenu = document.querySelector(".hamburger4");
+  const menu = document.querySelector(".menu");
+
+  hamburgerMenu.addEventListener("click", function () {
+    menu.classList.toggle("show");
+  });
+});

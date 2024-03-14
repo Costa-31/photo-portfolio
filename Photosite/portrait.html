@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fotó portfólió</title>
     <link rel="icon" href="./IMG_Fonts/link_icon.png" />
-    <link rel="stylesheet" type="text/css" href="photoStlye.css" />
+    <link rel="stylesheet" type="text/css" href="./style/photoStlye.css" />
+    <link rel="stylesheet" type="text/css" href="./style/portraitStyle.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -19,8 +20,8 @@
         </div>
         <div class="menu">
          <a href="../index.html">Főoldal</a>
-         <a href="#card-pictures">Utcai</a>
-         <a href="#card-pictures">Sport</a>
+         <a href="./street.html">Utcai</a>
+         <a href="./sport.html">Sport</a>
          <a href="#Contacts">Kapcsolat</a>
         </div>
       </div>
@@ -110,6 +111,10 @@
           <div class="image-placeholder27"></div>
         </div>
       </div>
+      <div class="modal" id="myModal">
+        <span class="close" id="close">&times;</span>
+        <img alt="Description" class="modal-content" id="fullScreenImage" />
+      </div>
     </section>
   
       <div id="Contacts">
@@ -125,8 +130,8 @@
             <div class="ownerNavbar">
               <div class="menu2">
                 <a href="../index.html">Főoldal</a>
-                <a href="#card-pictures">Utcai</a>
-                <a href="#card-pictures">Sport</a>
+                <a href="./street.html">Utcai</a>
+                <a href="./sport.html">Sport</a>
                 <a href="#header">Érkező</a>
                </div>
               <div class="Social_media">
@@ -148,5 +153,6 @@
       <script src="../script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     </section>
+    <script src="picscript.js"></script>
   </body>
 </html>
