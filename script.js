@@ -1,7 +1,5 @@
 let mybutton = document.getElementById("myBtn");
 
-document.body.style.overflowY = "auto";
-
 // When the user scrolls down 20px from the top of the document, show the button
 /*window.onscroll = function () {
   scrollFunction();
@@ -96,7 +94,7 @@ function updateSliderPosition() {
 }
 
 /* Hamburger menu for navbar*/
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.querySelector(".hamburger4");
   const menu = document.querySelector(".menu");
@@ -104,4 +102,4 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburgerMenu.addEventListener("click", function () {
     menu.classList.toggle("show");
   });
-});
+});*/
