@@ -4,7 +4,7 @@ let mybutton = document.getElementById("myBtn");
 /*window.onscroll = function () {
   scrollFunction();
 };*/
-/*
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -12,19 +12,19 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-*/
+
 // When the user clicks on the button, scroll to the top of the document
-/*function topFunction() {
+function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}*/
+}
 
 //for scroll back after refresh
-/*
+
 function saveScrollPosition() {
   const scrollY = window.scrollY;
   sessionStorage.setItem("scrollPosition", scrollY);
-}*/
+}
 
 //link handle for new window
 
@@ -94,7 +94,7 @@ function updateSliderPosition() {
 }
 
 /* Hamburger menu for navbar*/
-/*
+
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.querySelector(".hamburger4");
   const menu = document.querySelector(".menu");
@@ -102,4 +102,4 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburgerMenu.addEventListener("click", function () {
     menu.classList.toggle("show");
   });
-});*/
+});
