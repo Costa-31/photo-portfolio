@@ -1195,9 +1195,6 @@ h6 {
 
 /** iPads, Tablets **/
 @media screen and (max-width: 768px) {
-  body {
-    touch-action: none;
-  }
 }
 @media screen and (max-width: 720px) {
   /*.firstPic {
