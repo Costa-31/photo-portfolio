@@ -5,6 +5,7 @@
   margin: 0;
   color: white;
   font-family: Arial, sans-serif;
+  overflow-y: auto;
 }
 :root {
   --main-bg-color: #111216;
