@@ -112,7 +112,6 @@ ul {
   display: flex;
   height: 90vh;
   width: 35%;
-  position: absolute;
   align-self: flex-end;
   background-position: center; /* A háttérkép középre igazítása */
   background-image: url("https://drive.google.com/thumbnail?id=1WiygpUlZew_hmvny79Glj4hABP8xOCLr&sz=w1000");
@@ -124,6 +123,7 @@ ul {
   height: 100vh;
   width: 35%;
   right: 0px;
+  top: 0px;
   background-position: center; /* A háttérkép középre igazítása */
   background-image: url("https://drive.google.com/thumbnail?id=1ehQB99JHSkX4NwG8bB6fAifbXSIjB5ef&sz=w1000");
   background-size: cover;
