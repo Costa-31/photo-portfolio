@@ -7,7 +7,10 @@
   font-family: Arial, sans-serif;
 }
 body {
-  overflow: scroll;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
 }
 :root {
   --main-bg-color: #111216;
