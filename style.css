@@ -24,7 +24,7 @@ body {
 #header {
   background-color: #1c1b20;
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 
@@ -301,7 +301,7 @@ h1 {
   line-height: 60px;
 }
 span {
-  color: #bcbcbc;
+  color: #ffffff;
 }
 .card p {
   font-size: var(--basic-font-size);
@@ -903,9 +903,6 @@ h6 {
     font-size: var(--headline-font-size);
     align-self: center;
     line-height: 60px;
-  }
-  span {
-    color: #bcbcbc;
   }
   .card p {
     font-size: var(--basic-font-size);

@@ -1,3 +1,6 @@
+.image-placeholder25,
+.image-placeholder26,
+.image-placeholder27,
 .image-placeholder28,
 .image-placeholder29,
 .image-placeholder30,
@@ -10,10 +13,10 @@
 .image-placeholder37,
 .image-placeholder38 {
   padding-top: 100%;
-  background-color: #a09f9f; /* Háttérszín a skeleton képnek */
+  background-color: #ffffff; /* Háttérszín a skeleton képnek */
   background-position: center; /* A háttérkép középre igazítása */
   background-repeat: no-repeat; /* Megakadályozza a háttérkép ismétlődését */
-  background-size: cover;
+  background-size: contain;
 }
 
 .image-placeholder1 {
