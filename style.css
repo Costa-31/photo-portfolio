@@ -345,6 +345,7 @@ ul.photoType {
   overflow: hidden;
   justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
 }
 .galerie {
   display: flex;
@@ -365,7 +366,7 @@ ul.photoType {
 .blur_card3 {
   display: flex;
   position: relative;
-  width: 1200px;
+  width: 1400px;
   height: 800px;
   margin: 30px;
 }
@@ -573,13 +574,14 @@ img[alt~="blueEye"] {
   height: 50vh;
   background-color: var(--main-bg-color);
   justify-content: center;
+  align-items: center;
 }
 .basicOffer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   width: 30%;
-  margin-top: 30px;
   line-height: 25px;
   font-size: var(--middle-font-size);
 }

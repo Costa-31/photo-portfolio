@@ -84,12 +84,12 @@ const nextBtn = document.querySelector(".next-btn");
 let currentIndex = 0;
 
 prevBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1) % 3;
+  currentIndex = (currentIndex - 1) % 2;
   updateSliderPosition();
 });
 
 nextBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % 3;
+  currentIndex = (currentIndex + 1) % 2;
   updateSliderPosition();
 });
 
